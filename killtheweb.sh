@@ -2,39 +2,9 @@
 
 set -m # Enable Job Control
 
-for i in `seq 50`; do # start 30 jobs in parallel
+for i in `seq 20`; do # start 20 jobs in parallel
 #	sleep $i && 
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-	sleep .5
-	curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
-    curl http://st-beta.herokuapp.com/
-    curl http://st-beta.herokuapp.com/api/v1/video/search/?callback=jQuery17202604365944862366_1360951804808&term=rock&limit=15&_=1360951805354
-    curl http://st-beta.herokuapp.com/video/4a89ac59e2315112a9b9/BILL%20NYE%20MUSIC%20VIDEO:%20ROCKS%20ROCK%20HARDER
+	curl some_target
     
 done
 
