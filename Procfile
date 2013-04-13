@@ -1,1 +1,1 @@
-program: ./killtheweb $TARGETS
+program: ./killtheweb.sh $TARGETS
