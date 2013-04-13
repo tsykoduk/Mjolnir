@@ -2,11 +2,14 @@
 
 set -m # Enable Job Control
 
-TARGET=`cat ./target.list`
+# legacy. You should use env variables now or just pass the targets as a a command line list
+# TARGET=`cat ./target.list`
 
-for i in `seq 2`; do # start 20 jobs in parallel
+TARGETS=$@
+
+for i in `seq 10`; do # start 20 jobs in parallel
 #	sleep $i && 
-	for t in $TARGET
+	for t in $TARGETS
 	do
 		curl -s -S -L -w "%{http_code} total_time=%{time_total} time_connect=%{time_connect} time_start=%{time_starttransfer} speed=%{speed_download} %{url_effective}\\n" "${t}" -o /dev/null
 	done
