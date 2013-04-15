@@ -1,1 +1,1 @@
-program: ./killtheweb.sh $TARGETS
+runner: ruby ./killtheweb.sh $TARGETS
