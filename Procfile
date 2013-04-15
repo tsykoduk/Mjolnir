@@ -1,1 +1,1 @@
-program: ruby ./killtheweb.sh $TARGETS
+program: ruby ./killtheweb.rb $TARGETS
