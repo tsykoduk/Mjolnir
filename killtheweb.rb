@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 
 @targets = ARGV
-#@targets = ENV['TARGETS']
-puts @targets
 
 10.times do
     @targets.each do |t|
