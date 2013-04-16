@@ -9,8 +9,8 @@ Give it a config var of a space delimited list of targets to hit. Each dyno shou
 
 example:
 
-`heroku config TARGETS="http://my_cool_site.com/first_action http://my_cool_site.com/second_action http://my_cool_site.com/third_action"
-heroku scale program=5`
+    heroku config TARGETS="http://my_cool_site.com/first_action http://my_cool_site.com/second_action http://my_cool_site.com/third_action"
+    heroku scale program=5
 
 will assualt the three action endpoints with 50 concurent users and some level of randomness.
 
