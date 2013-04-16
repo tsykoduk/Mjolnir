@@ -14,6 +14,7 @@
 end
 
 
+#after everything is done, just sleep the sleep of the victorious.
 i = 100
 
 while i < 200 do
