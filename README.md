@@ -12,5 +12,5 @@ example:
     heroku config TARGETS="http://my_cool_site.com/first_action http://my_cool_site.com/second_action http://my_cool_site.com/third_action"
     heroku scale program=5
 
-will assualt the three action endpoints with 50 concurent users and some level of randomness.
+will assualt the three action endpoints with 100 concurent users and some level of randomness.
 
