@@ -5,7 +5,7 @@ Heroku based distrubited load testing tool
 
 Use the null buildpack for this: https://github.com/ryandotsmith/null-buildpack
 
-Give it a config var of a space delimited list of targets to hit. Each dyno should spin up 10 assults on the urls provided.
+Give it a config var of a space delimited list of targets to hit. Each dyno should spin up 20 assults on the urls provided.
 
 example:
 
