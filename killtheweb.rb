@@ -2,7 +2,7 @@
 
 @targets = ARGV
 
-16.times do
+14.times do
     fork do
       6250.times do
         @targets.each do |t|
