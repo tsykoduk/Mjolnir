@@ -3,7 +3,7 @@
 @targets = ARGV
 
 
-30.times do
+15.times do
     fork do
       1000.times do
         @targets.each do |t|
