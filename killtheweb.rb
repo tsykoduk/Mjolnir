@@ -15,7 +15,7 @@ puts "Run Started at " + starting_time.to_s
     end
   end
   ending_time = starting_time - Time.now
-  puts "run completed in " ending_time.to_s
+  puts "run completed in " + ending_time.to_s
 end
 
 
