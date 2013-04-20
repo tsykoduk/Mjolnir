@@ -2,8 +2,6 @@
 
 @targets = ARGV
 
-starting_time = Time.now
-
 puts "Run Started at " + starting_time.to_s
 
 15.times do
@@ -14,8 +12,6 @@ puts "Run Started at " + starting_time.to_s
       end
     end
   end
-  ending_time = starting_time - Time.now
-  puts "run completed in " + ending_time.to_s
 end
 
 
