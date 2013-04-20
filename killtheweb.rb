@@ -2,8 +2,6 @@
 
 @targets = ARGV
 
-puts "Run Started at " + starting_time.to_s
-
 15.times do
     fork do
       10.times do
