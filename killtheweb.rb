@@ -2,9 +2,9 @@
 
 @targets = ARGV
 
-14.times do
+10.times do
     fork do
-      6250.times do
+      10000.times do
         @targets.each do |t|
           system("curl -sSLw \"%{http_code} total_time=%{time_total} time_connect=%{time_connect} time_start=%{time_starttransfer} %{url_effective}\\n\" #{t} -o /dev/null")
       end
