@@ -3,7 +3,7 @@
 @targets = ARGV
 
 
-20.times do
+30.times do
     fork do
       1000.times do
         @targets.each do |t|
@@ -11,6 +11,7 @@
       end
     end
   end
+  puts "run completed"
 end
 
 
