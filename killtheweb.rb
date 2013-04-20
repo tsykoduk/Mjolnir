@@ -14,7 +14,7 @@ puts "Run Started at " + starting_time.to_s
       end
     end
   end
-  ending_time = staring_time - Time.now
+  ending_time = starting_time - Time.now
   puts "run completed in " ending_time.to_s
 end
 
