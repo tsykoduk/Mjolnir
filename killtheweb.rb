@@ -2,16 +2,17 @@
 
 @targets = ARGV
 
+puts "Run Started at " + Time.now
 
 15.times do
     fork do
-      1000.times do
+      10.times do
         @targets.each do |t|
           system("curl -sSLw \"%{http_code} total_time=%{time_total} time_connect=%{time_connect} time_start=%{time_starttransfer} %{url_effective}\\n\" #{t} -o /dev/null")
       end
     end
   end
-  puts "run completed"
+  puts "run completed at " + Time.now
 end
 
 
