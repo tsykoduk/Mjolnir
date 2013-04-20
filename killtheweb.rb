@@ -2,7 +2,9 @@
 
 @targets = ARGV
 
-puts "Run Started at " + Time.now
+starting_time = Time.now
+
+puts "Run Started at " + starting_time.to_s
 
 15.times do
     fork do
@@ -12,7 +14,8 @@ puts "Run Started at " + Time.now
       end
     end
   end
-  puts "run completed at " + Time.now
+  ending_time = staring_time - Time.now
+  puts "run completed in " ending_time.to_s
 end
 
 
