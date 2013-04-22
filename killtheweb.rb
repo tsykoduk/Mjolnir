@@ -2,6 +2,9 @@
 
 @targets = ARGV
 
+#After some expermentation, 12 forks seems to be optimal. Much more runs up the load on the dyno and 
+# just slows the entire thing down
+
 12.times do
     fork do
       10000.times do
