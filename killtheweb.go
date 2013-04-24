@@ -11,5 +11,3 @@ func main() {
 		}
 	}
 }
-
-func tester()
