@@ -8,7 +8,7 @@ Configuration:
     BUILDPACK_URL: https://codon-buildpacks.s3.amazonaws.com/buildpacks/dpiddy/ruby.tgz
     TARGETS:       http://ancient-beach-9165.herokuapp.com/
 
-Give it a config var of a space delimited list of targets to hit. Each dyno should spin up 20 assults on the urls provided.
+Give it a config var of a space delimited list of targets to hit. Each dyno should spin up 12 assults on the urls provided, giving a max of about 6000 RPM per dyno assuming you are returning requests quickly.
 
 example:
 
