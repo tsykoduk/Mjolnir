@@ -12,16 +12,11 @@
     fork do
       10000.times do
         @targets.each do |t|
-          # to insure a rate, why not fork here as well, with a sleep after the fork?
-          #fork do
           system("curl -sSLw \"%{http_code} total_time=%{time_total} time_connect=%{time_connect} time_start=%{time_starttransfer} %{url_effective}\\n\" #{t} -o /dev/null")
-          #end
-          #sleep 0.1 should give us 10 requests per second per main fork
       end
     end
   end
 end
-
 
 #after everything is done, just sleep the sleep of the victorious.
 #this is just to keep the process from crashing and getting restarted
