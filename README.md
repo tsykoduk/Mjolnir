@@ -16,6 +16,6 @@ example:
     heroku scale program=5
 
 
-will assault the three action endpoints with 100 concurent users. Each user will access the URLs given 1000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
+will assault the three action endpoints with 60 concurent users. Each user will access the URLs given 10000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
 
 
