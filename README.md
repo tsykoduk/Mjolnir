@@ -3,7 +3,10 @@ Mjölnir
 
 Heroku based distrubited load testing tool
 
-Use the null buildpack: https://github.com/ryandotsmith/null-buildpack
+Configuration:
+
+    BUILDPACK_URL: https://codon-buildpacks.s3.amazonaws.com/buildpacks/dpiddy/ruby.tgz
+    TARGETS:       http://ancient-beach-9165.herokuapp.com/
 
 Give it a config var of a space delimited list of targets to hit. Each dyno should spin up 20 assults on the urls provided.
 
