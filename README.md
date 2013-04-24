@@ -1,7 +1,7 @@
 Mjölnir
 =======
 
-Heroku based distrubited load testing tool
+Heroku based distributed load testing tool
 
 Configuration:
 
