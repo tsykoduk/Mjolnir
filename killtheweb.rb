@@ -24,6 +24,7 @@ end
 
 
 #after everything is done, just sleep the sleep of the victorious.
+#this is just to keep the process from crashing and getting restarted
 i = 100
 
 while i < 200 do
