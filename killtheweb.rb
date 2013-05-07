@@ -6,7 +6,7 @@
 # just slows the entire thing down.
 # Needs a little bit more testing, and it should settle between 12 and 14 forks.
 # I need to normalize away diffrences in dyno preformamce by running multi-dyno tests
-# I've seen some very stark diffrences between dynos (~ 500 RPM diffrences in preformance)
+# I've seen some very stark diffrences between dynos (~ 1000 RPM diffrences in preformance)
 
 12.times do
     fork do
