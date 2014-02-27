@@ -1,5 +1,7 @@
 package main
 
+// Unfinished golang implemtnation of Mjolnir
+
 import "fmt"
 import "strconv"
 import "os/exec"
