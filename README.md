@@ -1,21 +1,31 @@
 Mjölnir
 =======
 
-Heroku based distributed load testing tool
+A Heroku based distributed load testing tool.
 
-Configuration:
+Configuration variables should be set as follows:
 
-    BUILDPACK_URL: https://codon-buildpacks.s3.amazonaws.com/buildpacks/dpiddy/ruby.tgz
-    TARGETS:       http://ancient-beach-9165.herokuapp.com/
+  - `BUILDPACK_URL`: Specify the Heroku Ruby buildpack (`"https://github.com/heroku/heroku-buildpack-ruby"`)
+  - `TARGETS`: A comma delimited list of targets to hit (ex. `"http://my_cool_site.com/first_action,http://my_cool_site.com/second_action"`)
+  - `WORKERS`: The number of workers processes (default: `12`)
+  - `LENGTH` The number of times each worker will hit each endpoint; use `0` to run continuously (default: `10000`)
 
-Give it a config var of a space delimited list of targets to hit. Each dyno should spin up 12 assults on the urls provided, giving a max of about 6000 RPM per dyno assuming you are returning requests quickly.
+Then use the following command in the `Procfile`:
 
-example:
+    program: ruby ./killtheweb.rb start $TARGETS --workers=$WORKERS --length=$LENGTH
 
-    heroku config TARGETS="http://my_cool_site.com/first_action http://my_cool_site.com/second_action http://my_cool_site.com/third_action"
+Each dyno should spin up 12 assaults on the endpoints provided, giving a max of about 6000 RPM per dyno assuming you are returning requests quickly.
+
+Example:
+
+    heroku config:set \
+      BUILDPACK_URL="https://github.com/heroku/heroku-buildpack-ruby" \
+      TARGETS="http://my_cool_site.com/first_action,http://my_cool_site.com/second_action,http://my_cool_site.com/third_action" \
+      WORKERS=12 \
+      LENGTH=10000
+    
     heroku scale program=5
 
-
-will assault the three action endpoints with 60 concurent users. Each user will access the URLs given 10000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
+This will assault the three action endpoints with 60 concurrent worker. Each worker will access the URLs given 10000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
 
 
