@@ -14,7 +14,7 @@ Then use the following command in the `Procfile`:
 
     program: ruby ./killtheweb.rb start $TARGETS --workers=$WORKERS --length=$LENGTH
 
-Each dyno should spin up 12 assaults on the endpoints provided, giving a max of about 6000 RPM per dyno assuming you are returning requests quickly.
+Each dyno should spin up `$WORKERS` assaults on the endpoints provided, giving a max of about 6000 RPM per dyno assuming you are returning requests quickly.
 
 Example:
 
@@ -27,5 +27,4 @@ Example:
     heroku scale program=5
 
 This will assault the three action endpoints with 60 concurrent worker. Each worker will access the URLs given 10000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
-
 
