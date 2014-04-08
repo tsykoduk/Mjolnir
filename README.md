@@ -14,7 +14,7 @@ Then use the following command in the `Procfile`:
 
     program: ruby ./killtheweb.rb start $TARGETS --workers=$WORKERS --length=$LENGTH
 
-Each dyno should spin up `$WORKERS` assaults on the endpoints provided, giving a max of about 6000 RPM per dyno assuming you are returning requests quickly.
+Each dyno should spin up `$WORKERS` assaults on the endpoints provided. From my testing on 1x dyno, each worker will generate about 500 RPM, and 12 should safely fit on a 1x dyno. I have not tested on 2x or Px dynos, so YMMV.
 
 Example:
 
