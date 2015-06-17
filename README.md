@@ -26,5 +26,9 @@ Example:
     
     heroku scale program=5
 
-This will assault the three action endpoints with 60 concurrent worker. Each worker will access the URLs given 10000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
+This will assault the three action endpoints with 60 concurrent workers. Each worker will access the URLs given 10000 times, and then quietly die. You'll need to scale down and up or restart the dynos to rerun the test.
+
+Testing with Variance
+
+Use killtheweb2.rb if you want to do long term testing with variable delays between tests and slow ramp ups and downs.
 
