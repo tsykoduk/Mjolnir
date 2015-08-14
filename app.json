@@ -22,5 +22,6 @@
 	"BUILDPACK_URL":{
 		"description":"The required build pack",
 		"value":"https://github.com/heroku/heroku-buildpack-ruby"
+	},
   }
 }
