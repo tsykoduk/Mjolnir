@@ -1,0 +1,26 @@
+{
+  "name": "Mjölnir",
+  "description": "A simple Heroku-based distributed load testing tool",
+  "keywords": [
+    "load",
+    "testing"
+  ],
+  "repository": "https://github.com/tsykoduk/Mjolnir",
+  "env": {
+    "TARGETS": {
+      "description": "A comma-delimited list (no spaces) of target endpoints to request",
+      "value": "http://localhost, https://localhost"
+    },
+    "WORKERS": {
+      "description": "The number of worker processes to run (default: 8)",
+      "value": "8"
+    },
+    "LENGTH": {
+      "description": "The number of times each worker will request each target endpoint; use 0 to run continuously (default: 10000)",
+      "value": "10000"
+    },
+	"BUILDPACK_URL":{
+		"description":"The required build pack",
+		"value":"https://github.com/heroku/heroku-buildpack-ruby"
+  }
+}
