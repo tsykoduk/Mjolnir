@@ -19,9 +19,9 @@
       "description": "The number of times each worker will request each target endpoint; use 0 to run continuously (default: 10000)",
       "value": "10000"
     },
-	"BUILDPACK_URL":{
-		"description":"The required build pack",
-		"value":"https://github.com/heroku/heroku-buildpack-ruby"
-	},
+	"BUILDPACK_URL": {
+		"description": "The required build pack",
+		"value": "https://github.com/heroku/heroku-buildpack-ruby"
+	}
   }
 }
