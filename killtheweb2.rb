@@ -3,11 +3,9 @@
 require "thor"
 
 
-# After some experimentation, 12 forks seems to be optimal. Much more runs up the load on the dyno and
-# just slows the entire thing down.
-# Needs a little bit more testing, and it should settle between 12 and 14 forks.
-# I need to normalize away differences in dyno performance by running multi-dyno tests
-# I've seen some very stark differences between dynos (~ 1000 RPM differences in performance)
+# This will run tests with random delays between each request.
+# It will also ramp up RPS during certian hours and ramp down others to simulate load peaks
+# It's best to run this in continuous mode
 
 class Mjolnir < Thor
   
