@@ -32,3 +32,4 @@ Use killtheweb2.rb if you want to do long term testing with variable delays betw
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tsykoduk/Mjolnir)
 
+And - check out [Stormbringer](https://github.com/theandym/stormbringer) - a Golang port.
