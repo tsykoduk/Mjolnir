@@ -13,7 +13,7 @@ class Mjolnir < Thor
   desc "start TARGETS", "Start an assault against TARGETS (comma delimited list of target endpoints)"
 
   method_option :workers, :type => :numeric, :default => 12, :desc => "Number of workers"
-  method_option :length, :type => :numeric, :default => 10000, :desc => "Length of assult"
+  method_option :length, :type => :numeric, :default => 10000, :desc => "Length of assault"
 
   def start(args)
 
