@@ -1,1 +1,1 @@
-program: ruby ./killtheweb.rb start $TARGETS --workers=$WORKERS --length=$LENGTH
+program: ruby ./killtheweb2.rb start $TARGETS --workers=$WORKERS --length=$LENGTH
