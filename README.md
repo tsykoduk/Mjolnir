@@ -26,7 +26,7 @@ This will assault the three action endpoints with 60 concurrent workers. Each wo
 
 **Testing with Variance**
 
-Use killtheweb2.rb if you want to do long term testing with variable delays between tests and slow ramp ups and downs.
+Use demoloader.rb if you want to do long term testing with variable delays between tests and slow ramp ups and downs.
 
 **Easy Button**
 
